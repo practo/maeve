@@ -91,8 +91,6 @@ class MaeveMulti extends React.Component {
       const newComponentObj = this.getNewComponent(initialLoad);
       newComponents = [...this.state.childComponents, newComponentObj];
     }
-    console.log("YAHAN TO NAHI");
-    console.log(newComponents);
     this.setState({
       childComponents: newComponents,
       componentsCounter: newAddCounter,
@@ -110,16 +108,12 @@ class MaeveMulti extends React.Component {
   }
 
   removeComponent = (componentId) => {
-    console.log("removing the component");
-    console.log(this.state.childComponents);
     const newComponents = this.state.childComponents.filter(item =>
       item.componentId !== componentId
     );
     if(typeof this.props.removeCallback !== 'undefined') {
       this.props.removeCallback(componentId);
     }
-    console.log(newComponents);
-    console.log("DONE");
     this.setState({
       childComponents: newComponents,
     });
