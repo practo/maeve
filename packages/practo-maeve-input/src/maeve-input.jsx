@@ -1,5 +1,5 @@
 import React from 'react';
-import MaeveDropdown from 'maeve-dropdown';
+import MaeveDropdown from 'practo-maeve-dropdown';
 import debounce from 'lodash/debounce';
 import { InputLabel, InputField, ErrorMessage } from './maeve-input-style.js';
 
@@ -76,7 +76,7 @@ class MaeveInput extends React.Component {
       typeof autocomplete !== 'undefined' &&
       this.state.isFocus === true &&
       (
-        typeof autocomplete.trigger === 'undefined' ||
+        typeof autocomplete.trigger !== 'undefined' &&
         autocomplete.trigger <= this.state.value.length
       )
     ) {
