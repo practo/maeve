@@ -21,3 +21,8 @@ export const InputField = styled.input`
   padding: 0px 10px;
   box-sizing:border-box;
 `;
+
+export const Star = styled.input`
+  padding-left: 3px;
+  color: orangered;
+`;

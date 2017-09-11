@@ -12,19 +12,20 @@ class MaeveDropdown extends React.Component {
       if (items.length === 0) {
         dropdownItems.push(
           <MaeveDropdownListItem>
-            No result
+            No result found
           </MaeveDropdownListItem>
         );
+      } else {
+        dropdownItems = items.map((value, key) => (
+          <MaeveDropdownListItem
+            className="dropdown-item"
+            key={key}
+            onClick={(event) => this.props.onSelect(value, event)}
+          >
+            { value }
+          </MaeveDropdownListItem>
+        ));
       }
-      dropdownItems = items.map((value, key) => (
-        <MaeveDropdownListItem
-          className="dropdown-item"
-          key={key}
-          onClick={(event) => this.props.onSelect(value, event)}
-        >
-          { value }
-        </MaeveDropdownListItem>
-      ));
     }
     if (items !== null && this.props.addNewItem !== undefined) {
       dropdownItems.push(

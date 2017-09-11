@@ -1,6 +1,6 @@
 {
-  "name": "maeve-dropdown",
-  "version": "0.1.5",
+  "name": "practo-maeve-dropdown",
+  "version": "0.1.7",
   "description": "A simple dropdown",
   "main": "index.js",
   "scripts": {
