@@ -1,6 +1,6 @@
 {
   "name": "practo-maeve-input",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "A input box on steroids",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "uglify": "^0.1.5",
     "uglify-js": "^2.7.5",
     "react": "^15.4.2",
-    "lodash.debounce: "^4.0.7"
+    "lodash.debounce": "^4.0.7"
   },
   "jest": {
     "transform": {
