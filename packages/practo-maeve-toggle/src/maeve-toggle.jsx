@@ -23,7 +23,6 @@ export default class MaeveToggle extends React.Component {
             name={this.props.id}
             className="onoffswitch-checkbox"
             id={this.props.id}
-            defaultChecked
             onChange={event => this.props.onValueUpdate(event.target.checked, this.props.id)}
           />
           <OnOffswitchLabel className="onoffswitch-label" htmlFor={this.props.id}>
