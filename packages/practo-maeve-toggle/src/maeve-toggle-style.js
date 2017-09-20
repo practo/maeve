@@ -14,6 +14,7 @@ export const ToggleLabel = styled.label`
   width: 100%;
   margin-bottom: 5px;
   font-size: 16px;
+  font-weight: 700;
 `;
 
 export const OnOffSwitchCheckBox = styled.input`
