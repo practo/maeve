@@ -1,6 +1,6 @@
 import React from 'react';
 import MaeveDropdown from 'practo-maeve-dropdown';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash.debounce';
 import { InputLabel, InputField, ErrorMessage } from './maeve-input-style.js';
 
 class MaeveInput extends React.Component {
