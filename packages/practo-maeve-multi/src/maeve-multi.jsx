@@ -46,11 +46,16 @@ class MaeveMulti extends React.Component {
       });
     }
     newProps.valueId = newProps.valueId || `${component.props.id}-${newAddCounter}`;
+    newProps.id = newProps.valueId;
+    console.log("NEW PROPS");
+    console.log(newProps);
     const newComponent = React.cloneElement(component, newProps);
+    console.log(newComponent);
     const newComponentObj = {
       componentId: newComponent.props.valueId || newComponent.props.id,
       component: newComponent,
     };
+    console.log(newComponentObj);
     return newComponentObj;
   }
 
@@ -74,20 +79,24 @@ class MaeveMulti extends React.Component {
   addNewComponent = (initialLoad) => {
     let newAddCounter = this.state.componentsCounter + 1;
     if (this.props.children.props.fieldValue && this.props.children.props.fieldValue.length > 1 && !initialLoad && this.state.componentsCounter === 1) {
+      console.log("HERE1");
       newAddCounter = this.props.children.props.fieldValue.length;
       this.state.componentsCounter = this.props.children.props.fieldValue.length;
     }
     if(typeof this.props.addCallback !== 'undefined') {
+      console.log("HERE2");
       const component = this.props.children;
       this.props.addCallback(`${component.props.id}-${this.state.componentsCounter + 1}`);
     }
     let newComponents = [];
     if (this.props.children.props.fieldValue && this.props.children.props.fieldValue.length > 1 && initialLoad) {
+      console.log("HERE3");
       this.props.children.props.fieldValue.map((fieldVal, index)=> {
         const newComponentObj = this.getListComponent(fieldVal, index);
         newComponents.push(newComponentObj);
       })
     } else {
+      console.log("HERE4");
       const newComponentObj = this.getNewComponent(initialLoad);
       newComponents = [...this.state.childComponents, newComponentObj];
     }

@@ -9,11 +9,30 @@ import {
 } from './maeve-toggle-style.js';
 
 export default class MaeveToggle extends React.Component {
+
+  componentDidMount() {
+    this.props.onValueUpdate(false, this.props.id);
+  }
+
+  shouldComponentUpdate(nextProps) {
+    if(!this.props.value === nextProps.value) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   render() {
     return (
       <div className="maeve-toggle">
-        { typeof this.props.label !== undefined ?
+        { typeof this.props.label !== undefined && !this.props.required ?
           <ToggleLabel>{ this.props.label }</ToggleLabel>
+          :
+          ''
+        }
+        { typeof this.props.label !== undefined && this.props.required ?
+          <ToggleLabel>{ this.props.label }<span className="star">*</span><style>{'.star{padding-left: 3px;color: orangered;}'}</style>
+          </ToggleLabel>
           :
           ''
         }
