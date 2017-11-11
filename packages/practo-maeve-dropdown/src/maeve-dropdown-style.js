@@ -13,6 +13,8 @@ export const MaeveDropdownList = styled.ul`
   background: #f2f2f2;
   border: 1px solid #efefef;
   border-top: 0px;
+  overflow: scroll;
+  max-height: -webkit-fill-available;
 `;
 
 export const MaeveDropdownListItem = styled.li`
