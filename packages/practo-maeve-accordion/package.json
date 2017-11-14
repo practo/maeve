@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "practo-maeve-accordion@^1.0.0",
+        "scope": null,
+        "escapedName": "practo-maeve-accordion",
+        "name": "practo-maeve-accordion",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/home/vagrant/mds-curation/web-app"
+    ]
+  ],
+  "_from": "practo-maeve-accordion@>=1.0.0 <2.0.0",
+  "_id": "practo-maeve-accordion@1.0.0",
+  "_inCache": true,
+  "_location": "/practo-maeve-accordion",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/practo-maeve-accordion-1.0.0.tgz_1489695145691_0.1648246282711625"
+  },
+  "_npmUser": {
+    "name": "glennflanagan",
+    "email": "glenn@arctictiger.co.uk"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "practo-maeve-accordion@^1.0.0",
+    "scope": null,
+    "escapedName": "practo-maeve-accordion",
+    "name": "practo-maeve-accordion",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-responsive-accordion/-/react-responsive-accordion-1.0.0.tgz",
+  "_shasum": "e2c39ee13e18daa40d9d78486beccd27f4988cba",
+  "_shrinkwrap": null,
+  "_spec": "react-responsive-accordion@^1.0.0",
+  "_where": "/home/vagrant/mds-curation/web-app",
+  "author": {
+    "name": "Glenn Flanagan",
+    "email": "glenn@arctictiger.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/glennflanagan/react-responsive-accordion/issues"
+  },
+  "dependencies": {
+    "react": "^15.4.2"
+  },
+  "description": "React accordion component which is 100% responsive.",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-react": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "react-collapsible": "^1.3.0",
+    "react-dom": "^15.4.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "e2c39ee13e18daa40d9d78486beccd27f4988cba",
+    "tarball": "https://registry.npmjs.org/react-responsive-accordion/-/react-responsive-accordion-1.0.0.tgz"
+  },
+  "gitHead": "a4d666d605cc39e699f641ab6c7270c1ec62b86e",
+  "homepage": "https://github.com/glennflanagan/react-responsive-accordion#readme",
+  "keywords": [
+    "react-component",
+    "react",
+    "collapse",
+    "collapsible",
+    "accordion"
+  ],
+  "license": "MIT",
+  "main": "dist/Accordion.js",
+  "maintainers": [
+    {
+      "name": "glennflanagan",
+      "email": "glenn@arctictiger.co.uk"
+    }
+  ],
+  "name": "practo-maeve-accordion",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0",
+    "react-collapsible": "^1.3.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glennflanagan/react-responsive-accordion.git"
+  },
+  "scripts": {
+    "build": "babel src/Accordion.js > dist/Accordion.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.4"
+}
