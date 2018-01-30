@@ -22,6 +22,21 @@ export const InputField = styled.input`
   box-sizing:border-box;
 `;
 
+export const InputDisabledField = styled.input`
+  width: 100%;
+  height: 32px;
+  border-radius: 2px;
+  border: solid 1px #cccccc;
+  padding: 0px 10px;
+  box-sizing:border-box;
+  pointer-events: none;
+  background-color: whitesmoke;
+  color: #bdbdbd;
+  border-bottom: 1px dotted #ddd;
+  box-shadow: none;
+}
+`;
+
 export const Star = styled.input`
   padding-left: 3px;
   color: orangered;

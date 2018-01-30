@@ -134,9 +134,15 @@ class MaeveInput extends React.Component {
           ''
         }
         {errorMessage}
-        <InputField
-          {...inputProps}
-        />
+        { this.props.autogen !== undefined && this.props.autogen ?
+          <InputDisabledField
+            {...inputProps}
+          />
+          :
+          <InputField
+            {...inputProps}
+          />
+        }
         {dropdown}
         {this.props.children}
       </div>
