@@ -33,6 +33,7 @@ export const OnOffswitchLabel = styled.label`
   cursor: pointer;
   border: 2px solid #F0F0F0;
   border-radius: 20px;
+  width: 90px;
 `;
 
 export const OnOffswitchInner = styled.div`
@@ -64,14 +65,17 @@ export const OnOffswitchInner = styled.div`
 `;
 
 export const OnOffswitchSwitch = styled.label`
-  display: block; width: 17px;
+  display: block;
+  width: 17px;
+  height: 29px;
   margin: 6.5px;
   background: #FFFFFF;
   position: absolute;
-  top: 0;
+  top: -6px;
   bottom: 0;
   right: 42px;
   border: 2px solid #F0F0F0;
   border-radius: 20px;
   transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
 `;
