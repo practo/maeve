@@ -20,7 +20,7 @@ export const ToggleLabel = styled.label`
 export const OnOffSwitchCheckBox = styled.input`
   display: none;
   &:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px;
+    right: 111px;
   }
   &:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
@@ -71,9 +71,8 @@ export const OnOffswitchSwitch = styled.label`
   margin: 6.5px;
   background: #FFFFFF;
   position: absolute;
-  top: -6px;
+  top: 31px;
   bottom: 0;
-  right: 42px;
   border: 2px solid #F0F0F0;
   border-radius: 20px;
   transition: all 0.3s ease-in 0s;
